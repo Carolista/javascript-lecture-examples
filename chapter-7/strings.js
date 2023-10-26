@@ -12,104 +12,99 @@
 
 /** STRINGS — BRACKET NOTATION & IMMUTABILITY **/
 
-let theBoyWhoLived = " Hairy Plotter  "; // um... that's not quite right!
+let theLastGallifreyan = " Tha Docktor  "; // um... that's not quite right!
 
 // TODO: Use bracket notation to print the first character of the first name.
-console.log(theBoyWhoLived[1]);
+console.log(theLastGallifreyan[1]);
 
 // TODO: Use bracket notation to print the first character of the last name.
-console.log(theBoyWhoLived[7]);
+console.log(theLastGallifreyan[7]);
 
 // TODO: Print the just the initials.
-console.log(theBoyWhoLived[1] + theBoyWhoLived[7]);
+console.log(theLastGallifreyan[1] + theLastGallifreyan[7]);
 
 // TODO: Try to fix the mistakes in the name by using bracket notation to assign new values to characters at specific indices, then print the whole name to see if it worked.
-theBoyWhoLived[3] = "r";
-theBoyWhoLived[8] = "";
-console.log(theBoyWhoLived); // ope, nope
+theLastGallifreyan[3] = "e";
+theLastGallifreyan[8] = "";
+console.log(theLastGallifreyan); // ope, nope
 // Strings are immutable and CANNOT be changed this way.
 
 
 /** THE LENGTH PROPERTY **/
 
-let heWhoShallNotBeNamed = "Voldemort";
+// TODO: Declare a variable
+let dalekWarCry = "Exterminate!";
 
 // TODO: Print the length of the string.
-console.log(heWhoShallNotBeNamed.length);
+console.log(dalekWarCry.length);
 
 // TODO: Use the length to store the index of the last character in a variable, then print it.
-let lastIndex = heWhoShallNotBeNamed.length - 1;
+let lastIndex = dalekWarCry.length - 1;
 console.log(lastIndex);
 
 // TODO: Use bracket notation and the variable you created to print the last character of the string.
-console.log(heWhoShallNotBeNamed[lastIndex]);
+console.log(dalekWarCry[lastIndex]);
 
 
 /** COMMON STRING METHODS **/
 
 /* Changing Case */
-let lightsOn = "Lumos";
-let lightsOff = "Nox";
+let getAMoveOn = "Allons-y!";
+let timeDescription = "Wibbly-wobbly, timey-wimey";
 
-// TODO: Print lightsOn in all caps, then print the stored variable.
-console.log(lightsOn.toUpperCase());
-console.log(lightsOn);
+// TODO: Print getAMoveOn in all caps, then print the stored variable.
+console.log(getAMoveOn.toUpperCase());
+console.log(getAMoveOn);
 
-// TODO: Print lightsOff in all lowercase, then print the stored variable.
-console.log(lightsOff.toLowerCase());
-console.log(lightsOff);
+// TODO: Print timeDescription in all lowercase, then print the stored variable.
+console.log(timeDescription.toLowerCase());
+console.log(timeDescription);
 
 
 /* Trim & Replace */
 
-// TODO: Remove the leading and trailing spaces from theBoyWhoLived and reassign the returned value to the original variable, then print it.
-theBoyWhoLived = theBoyWhoLived.trim();
-console.log(theBoyWhoLived);
+// TODO: Remove the leading and trailing spaces from theLastGallifreyan and reassign the returned value to the original variable, then print it.
+theLastGallifreyan = theLastGallifreyan.trim();
+console.log(theLastGallifreyan);
 
-// TODO: Change the errant i to an r in "Hairy", reassigning to the original variable, then print it.
-theBoyWhoLived = theBoyWhoLived.replace("i", "r");
-console.log(theBoyWhoLived);
-
-// One more, just for fun
-let wingardiumLeviosa = "Wingardium LevioSA";
-
-// TODO: Correct the emphasis, per Miss Granger, and print it
-wingardiumLeviosa = wingardiumLeviosa.replace("oSA", "Osa");
-console.log(wingardiumLeviosa);
+// TODO: Change the errant a to an e in "Tha", reassigning to the original variable, then print it.
+theLastGallifreyan = theLastGallifreyan.replace("a", "e");
+console.log(theLastGallifreyan);
 
 
 /* Finding Characters Within a String */
 
-// TODO: Check to see if there is a t in theBoyWhoLived, and print the return value (boolean).
-console.log(theBoyWhoLived.includes("t"));
+// TODO: Check to see if there is a t in theLastGallifreyan, and print the return value (boolean).
+console.log(theLastGallifreyan.includes("t"));
 
-// TODO: Get the index of the errant l in the last name and print it.
-console.log(theBoyWhoLived.indexOf("l"));
+// TODO: Get the index of the errant k in the name, store it in a variable, then print it.
+let extraLetter = theLastGallifreyan.indexOf("k")
+console.log(extraLetter);
 
 
 /* Create a New String from a Substring */
 
-// TODO: Use .slice() to build the correct string, omitting the l, and reassign it to the original variable. Print the final result.
-theBoyWhoLived = theBoyWhoLived.slice(0, 7) + theBoyWhoLived.slice(8);
-console.log(theBoyWhoLived);
+// TODO: Use .slice() to build the correct string, omitting the k, and reassign it to the original variable. Print the final result.
+theLastGallifreyan = theLastGallifreyan.slice(0, extraLetter) + theLastGallifreyan.slice(extraLetter + 1);
+console.log(theLastGallifreyan);
 // SUCCESS!
 
 
 /** TEMPLATE LITERALS **/
 
-let black = "Sirius Black";
-let dumbledore = "Albus Dumbledore";
-let hagrid = "Rubeus Hagrid";
+let rose = "Rose Tyler";
+let martha = "Martha Jones";
+let donna = "Donna Noble";
 
-let quote1 = "Yer a wizard, Harry!";
-let quote2 = "If you want to know what a man’s like, take a good look at how he treats his inferiors, not his equals.";
-let quote3 = "It is our choices, Harry, that show what we truly are, far more than our abilities.";
+let quote1 = "Oi!";
+let quote2 = "The first 19 years Of my life, nothing happened. Nothing at all. Not ever. And then I met a man called The Doctor.";
+let quote3 = "All of space and time he promised me!";
 
 // TODO: Using template literals, combine each quote with the correct character so that they come out in the console formatted like this: 
-// "I always wanted to use that spell." - Minerva McGonagall
-console.log(`"${quote1}" - ${hagrid}`);
-console.log(`"${quote2}" - ${black}`);
-console.log(`"${quote3}" - ${dumbledore}`);
+// "I am the Master and you will obey me." - The Master
+console.log(`"${quote1}" - ${donna}`);
+console.log(`"${quote2}" - ${rose}`);
+console.log(`"${quote3}" - ${martha}`);
 
 
 /* PUT IT ALL TOGETHER */
@@ -121,7 +116,7 @@ const input = require('readline-sync');
 let firstName = input.question("\nPlease enter your first name:\n");
 
 // The user may not give you their name formatted as you need it to be
-// Examples: "DRACO" or "luna" or " neville "
+// Examples: "AMY" or "rory" or " sally "
 // Your code needs to anticipate fixing any of these formatting issues
 // Think it through — what order should you do the modifications in?
 // NOTE: There is more than one way to do this!

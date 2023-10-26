@@ -11,159 +11,165 @@
 
 /** CREATING ARRAYS & BRACKET NOTATION **/
 
-let hogwartsHouses = ["Ravenclaw", "Hufflepuff", "Slytherin", "the best house IMHO"];
+let enemies = ["Daleks", "Cybermen", "Slitheen", "the ones in the library", "Weeping Angels"];
 
 // TODO: Use bracket notation to print the second element of the array. Remember that arrays are zero-indexed!
-console.log(hogwartsHouses[1]);
+console.log(enemies[1]);
 
 // TODO: Unlike strings, arrays ARE mutable — use bracket notation to replace the fourth element with the correct name, then print the entire array.
-hogwartsHouses[3] = "Gryffindor";
-console.log(hogwartsHouses);
+enemies[3] = "Vashta Nerada";
+console.log(enemies);
 
-// TODO: Create an empty array, then use bracket notation to add the names of our favorite wizard trio, then print the array.
-let wizardTrio = [];
-wizardTrio[0] = "Harry";
-wizardTrio[1] = "Hermione";
-wizardTrio[2] = "Ron";
-console.log(wizardTrio);
+// TODO: Create an empty array, then use bracket notation to add the names of some of the Doctor's allies, then print the array.
+let allies = [];
+allies[0] = "";
+allies[1] = "";
+allies[2] = "";
+allies[3] = "";
+console.log(allies);
 
 // TODO: Try printing an element at index 10. What happens?
-console.log(wizardTrio[10]);
+console.log(allies[10]);
 
 
 /** THE LENGTH PROPERTY **/
 
-// TODO: Print the length of the array of wizards.
-console.log(wizardTrio.length);
+// TODO: Print the length of the array of hobbits.
+console.log(allies.length);
 
 // TODO: Use the length to calculate the index of the last element of the array of the houses of Hogwarts, and print that element.
-console.log(hogwartsHouses[hogwartsHouses.length - 1])
+console.log(enemies[enemies.length - 1])
 
 
 /** COMMON ARRAY METHODS **/
 
 /* Locate an Element within an Array */
 
-let marauders = ["Sirius", "Remus", "Peter", "James"];
+let noblesOfRohan = [];
 
-// TODO: Check to see if Peter is in the array of marauders and print the result (true or false).
-console.log(marauders.includes("Peter"));
+// TODO: Check to see if Aragorn is in the array of Rohan's nobles and print the result (true or false).
+console.log(noblesOfRohan.includes(""));
 
-// TODO: Find the index of Sirius in the array and print it
-console.log(marauders.indexOf("Sirius"));
+// TODO: Find the index of Eomer in the array and print it
+console.log(noblesOfRohan.indexOf(""));
 
 
 /* Create by Concatenating Two Arrays */
 
-let profs1 = ["Snape", "Sprout", "Trelawney"];
-let profs2 = ["Moody", "Lockhart"];
-let profs3 = ["Flitwick", "Slughorn", "McGonagall"];
+let group1 = [];
+let group2 = [];
+let group3 = [];
 
 // TODO: Combine the three arrays into a single array and print it.
-let allProfs = profs1.concat(profs2, profs3);
-console.log(allProfs);
+let entireGroup = group1.concat(group2, group3);
+console.log(entireGroup);
 
 
 /* Create by Taking a Slice */
 
 // TODO: Create a new array from just the middle half of the full list of professors, then print it.
-let middleProfs = allProfs.slice(2, 6);
-console.log(middleProfs);
+let middleGroup = entireGroup.slice(2, 6);
+console.log(middleGroup);
 
 
 /* Create by Splitting a String */
 
-let spellsString = "Alohamora | Stupefy | Ascendio | Riddikulus | Incendio";
+let sentence = "JO BO KO RO NO SO"; // TEMP look up spelling
 
 // TODO: Create a new array with each spell as a separate element, then print it
-let spellsArray = spellsString.split(" | ");
-console.log(spellsArray);
+let wordArray = sentence.split(" ");
+console.log(wordArray);
 
 
 /* Joining an Array To Create a String */
 
-// TODO: Print the spells as a string again, this time connected by something other than a pipe
-console.log(spellsArray.join(" ~ "));
+// TODO: Print the spells as a string again, this time connected by something other than just a space
+console.log(wordArray.join("! "));
 
 
 /* Reverse */
 
 // TODO: Reverse the array with all professors and print it
-allProfs.reverse();
-console.log(allProfs);
+entireGroup.reverse();
+console.log(entireGroup);
 
 
 /* Sort */
 
 // TODO: Sort the array alphabetically and print it.
-allProfs.sort();
-console.log(allProfs);
+entireGroup.sort();
+console.log(entireGroup);
 
 
 /* Add & Remove at End of Array */
 
-// TODO: Remove Professor Trelawney from the end of the array, then print the modified array.
-allProfs.pop();
-console.log(allProfs);
+// TODO: Remove the last element, then print the modified array.
+entireGroup.pop();
+console.log(entireGroup);
 
-// TODO: Add Professor Umbridge to the end of the array, then print the modified array.
-allProfs.push("Umbridge");
-console.log(allProfs);
+// TODO: Add a name to the end of the array, then print the modified array.
+entireGroup.push("");
+console.log(entireGroup);
 
 
 /* Add & Remove at Beginning of Array */
 
-// TODO: Remove Flitwick from the beginning of the array, then print the modified array.
-allProfs.shift();
-console.log(allProfs);
+// TODO: Remove the first element, then print the modified array.
+entireGroup.shift();
+console.log(entireGroup);
 
-// TODO: Add Lupin to the beginning of the array, then print the modified array.
-allProfs.unshift("Lupin");
-console.log(allProfs);
+// TODO: Add a name to the beginning of the array, then print the modified array.
+entireGroup.unshift("");
+console.log(entireGroup);
 
 /* Insert and/or Remove Anywhere in an Array */
 
-// TODO: Remove Professor Moody from the array, then print the modified array.
-allProfs.splice(3, 1);
-console.log(allProfs);
+// TODO: Remove ________ from the array, then print the modified array.
+entireGroup.splice(3, 1);
+console.log(entireGroup);
 
-// TODO: Add Professor Quirrell between Snape and Sprout, then print the modified array.
-allProfs.splice(5, 0, "Quirrell");
-console.log(allProfs);
+// TODO: Add another name between ____ and ____, then print the modified array.
+entireGroup.splice(5, 0, "");
+console.log(entireGroup);
 
 
 /** METHOD CHAINING **/
 
-let diagonAlley = "Diagon Alley";
+let tardis = "tardis";
 
-// TODO: In a single line of code, change "Diagon Alley" to "diagonally", then print the reassigned variable.
-// Steps, which can be done in any order:
-// make all letters lowercase
-// remove space
-// remove e
-diagonAlley = diagonAlley.toLowerCase().replace(" ", "").replace("e", "");
-console.log(diagonAlley);
+// TODO: In a single line of code, change "tardis" to "T.A.R.D.I.S", then print the reassigned variable.
+// Steps, which may not be in the right order:
+// split string into an array of characters
+// make all characters uppercase
+// join characters with periods
+tardis = tardis.toUpperCase().split("").join(".");
+console.log(tardis);
 
-// TODO: Starting with the array of Hogwarts houses, print a single string that lists the houses in reverse alphabetical order, each separated by a comma and space.
+// TODO: Starting with the array of enemies, print a single string that lists the enemies in reverse alphabetical order, each separated by a comma and space.
 // Steps, which must be done in a certain order:
 // While it is an array, sort it, then reverse it
 // Then join with the connector ", " to make it a string
-console.log(hogwartsHouses.sort().reverse().join(", "));
+console.log(enemies.sort().reverse().join(", "));
 
 
 /** MULTIDIMENSIONAL ARRAYS **/
 
-let gryffindors = ["Neville Longbottom", "Seamus Finnegan", "Ginny Weasley"];
-let hufflepuffs = ["Cedric Diggory", "Nymphadora Tonks", "Newt Scamander"];
-let ravenclaws = ["Luna Lovegood", "Cho Chang", "Padma Patil"];
-let slytherins = ["Draco Malfoy", "Vincent Crabbe", "Gregory Goyle"];
+let tenthDoctorCompanions = ["Rose", "Martha", "Donna"];
+let eleventhDoctorCompanions = ["Amy", "Rory"]; // TEMP who else?
+let twelfthDoctorCompanions = ["Clara", "Bobbie", ""]; // TEMP check spelling
+let thirteenthDoctorCompanions = ["", "", ""]; // TEMP look up names
 
 // TODO: Put all four arrays inside a array of assorted students, then print it
-let assortedStudents = [gryffindors, hufflepuffs, ravenclaws, slytherins];
-console.log(assortedStudents);
+let allCompanions = [
+  tenthDoctorCompanions, 
+  eleventhDoctorCompanions, 
+  twelfthDoctorCompanions, 
+  thirteenthDoctorCompanions
+];
+console.log(allCompanions);
 
-// TODO: Print Ginny's name using bracket notation with assortedStudents
-console.log(assortedStudents[0][2]);
+// TODO: Print _____'s name using bracket notation with allCompanions
+console.log(allCompanions[0][2]);
 
-// TODO: Print Luna's name using bracket notation with assortedStudents
-console.log(assortedStudents[2][0]);
+// TODO: Print _______'s name using bracket notation with allCompanions
+console.log(allCompanions[2][0]);
