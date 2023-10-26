@@ -14,7 +14,6 @@
 
 /* THE STRING */
 
-// TODO: Change the values for each string
 // Remember that quotes within a quote require using single quotes
 let emptyString = ""; // no characters
 let space = " "; // space only
