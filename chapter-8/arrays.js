@@ -71,7 +71,7 @@ console.log(companionList);
 /* Create by Taking a Slice */
 
 // Create a new array from just the middle 3 of the list of companions, then print it.
-let middleCompanions = companionList.slice(5, 8);
+let middleCompanions = companionList.slice(4, 7);
 console.log(middleCompanions);
 
 
@@ -86,8 +86,15 @@ console.log(judoonJSArray);
 
 /* Joining an Array To Create a String */
 
-// Print the Judoon word as a string again, this time connected by something other than just a space
-console.log(judoonJSArray.join("! "));
+// If you try to just "stringify" an array, it doesn't read very well.
+console.log(String(judoonJSArray));
+console.log(judoonJSArray.toString());
+
+// Print the Judoon array as a string again, this time connected by something a comma and a space
+console.log(judoonJSArray.join(", "));
+
+// Connect the array with something else
+console.log(judoonJSArray.join(" * "));
 
 
 /* Reverse */
@@ -124,8 +131,8 @@ console.log(firstEnemy);
 console.log(enemies);
 
 // Add the removed element back to the beginning of the array, then print the modified array.
-companionList.unshift(firstEnemy);
-console.log(companionList);
+enemies.unshift(firstEnemy);
+console.log(enemies);
 
 /* Insert and/or Remove Anywhere in an Array */
 
