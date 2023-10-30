@@ -78,7 +78,6 @@ console.log(middleCompanions);
 /* Create by Splitting a String */
 
 let judoonJS = "JO BLO VO BLO SO CO RO KRO PO TO";
-console.log(judoonJS.toUpperCase());
 
 // TODO: Create a new array with each Judoon letter as a separate element, then print it
 let judoonJSArray = judoonJS.split(" ");
