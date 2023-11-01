@@ -176,15 +176,15 @@ let characters = [
 let leiaFound = false;
 
 for (let i=0; i < characters.length; i++) {
-	console.log(`Selecting the group at index ${i}...`);
+	console.log(`\nSelecting the group at index ${i}:`);
 	for (let j=0; j < characters[i].length; j++) {
-		console.log(`Checking the character at index ${j}...`)
+		console.log(`\n  Checking the character at index ${j}...`)
 		if (characters[i][j] === "Princess Leia") {
 			console.log("\nFOUND HER! She has the plans!!!\n");
 			leiaFound = true;
 			break;
 		} else {
-			console.log(`Nope, that was ${characters[i][j]}`)
+			console.log(`  Nope, that was ${characters[i][j]}`)
 		}
 	}
 	if (leiaFound) {
