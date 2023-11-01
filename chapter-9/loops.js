@@ -29,9 +29,9 @@ for (let i = 0; i <= 5; i++) {
 console.log("\nIterating over Characters of a String");
 
 // Print each character one at a time
-let obiGreeting = "Hello there";
-for (let i = 0; i < obiGreeting.length; i++) {
-	console.log(obiGreeting[i]);
+let obiWanGreeting = "Hello there";
+for (let i = 0; i < obiWanGreeting.length; i++) {
+	console.log(obiWanGreeting[i]);
 }
 
 
@@ -104,7 +104,7 @@ for (let i = 1; i <= 3; i++) {
 console.log("\nFiltering an Array");
 
 // Create a new array that has only words beginning with "A" from the original array, then print it
-let names = ["Aldaraan", "Calrissian", "Andor", "Armorer", "Greedo", "Ackbar", "Sateen", "Amadala"];
+let names = ["Aldaraan", "Calrissian", "Andor", "Armorer", "Ahsoka", "Greedo", "Ackbar", "Sateen", "Amadala"];
 
 let onlyANames = [];
 for (let i=0; i < names.length; i++) {
