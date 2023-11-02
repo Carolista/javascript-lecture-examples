@@ -11,6 +11,8 @@ let currHearts = 3;
 let inventory = [];
 let rupees = 0;
 
+let line = "-".repeat(80);
+
 // Conversations with NPCs
 let swordMsg = `"It's dangerous to go alone! Take this."`;
 let shopMsg = `"Buy somethin' will ya!"
@@ -32,7 +34,6 @@ Link, you must gather the 8 pieces of the Triforce of Wisdom, defeat Ganon, and 
 
 // Define a function that takes two parameters, char and message, and returns a string with the character saying the message to Link when he enters an occupied cave or secret room.
 function getCharResponse(char, msg) {
-  let line = "--------------------------------------------------------------------------------";
 	return `
 ${line}
 Link sees ${char} standing before him, saying, ${msg}

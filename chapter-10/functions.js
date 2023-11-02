@@ -22,10 +22,8 @@ function sayHello(firstName) {
 // Write a function that returns a string that will describe one or more enemies
 // Allow for a specific action verb
 function describeEnemies(enemyType, numEnemies, actionVerb) {
-  let linkingVerb = "is";
   if (numEnemies > 1) {
     enemyType = "group of " + enemyType + "s";
-    linkingVerb = "are"
   } 
   return `A ${enemyType} ${linkingVerb} ${actionVerb} nearby.`;
 }
