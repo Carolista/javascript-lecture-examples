@@ -25,7 +25,7 @@ function describeEnemies(enemyType, numEnemies, actionVerb) {
   if (numEnemies > 1) {
     enemyType = "group of " + enemyType + "s";
   } 
-  return `A ${enemyType} ${linkingVerb} ${actionVerb} nearby.`;
+  return `A ${enemyType} is ${actionVerb} nearby.`;
 }
 
 // Call describeEnemies with real values (arguments) and print the return value
