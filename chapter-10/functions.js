@@ -9,177 +9,71 @@
 	https://youtube.com/@CodeWithCarrie
 */
 
+const input = require('readline-sync');
 
-/** DEFINING YOUR OWN FUNCTIONS **/
 
-/* Calling vs Defining */
-console.log("\nCalling vs Defining");
+console.log(sayHello("Link"));
 
-console.log(sayHello("Joe"));
-console.log(formatEmail("joe@schmo.com"));
-
+// Notice the functions can be defined below but still used above
 function sayHello(firstName) {
-  return `Hello, ${firstName}!`;
+  console.log(`Hello, ${firstName}!`);
 }
 
-function formatEmail(email) {
-  return `Email address: ${email}`;
+// Write a function that returns a string that will describe one or more enemies
+// Allow for a specific action verb
+function describeEnemies(enemyType, numEnemies, actionVerb) {
+  let linkingVerb = "is";
+  if (numEnemies > 1) {
+    enemyType = "group of " + enemyType + "s";
+    linkingVerb = "are"
+  } 
+  return `A ${enemyType} ${linkingVerb} ${actionVerb} nearby.`;
 }
 
+// Call describeEnemies with real values (arguments) and print the return value
+console.log(describeEnemies("tektite", 3, "hopping around"));
+console.log(describeEnemies("moblin", 1, "snarling menacingly"));
 
-/** INPUT: PARAMETERS & VARIABLES **/
+// Store a description in a variable and then print it
+let octorokDescription = describeEnemies("octorok", 4, "spitting rocks");
+console.log(octorokDescription);
 
-/* Parameters are Variables */
-console.log("\nParameters are Variables");
 
-function formatSSN(ssn1, ssn2, ssn3) {
-  return `${ssn1}-${ssn2}-${ssn3}`;
+let inventory = [];
+
+// Write a function that adds an item to Link's inventory and announces it
+function addItemToInventory(item) {
+	inventory.push(item);
+	console.log(`Link now has a ${item}!`);
 }
 
-// Call formatSSN with real values (arguments) and print the return value
-console.log(formatSSN(123, 45, 6789));
+// Add a sword and a shield to inventory, then print the inventory array
+addItemToInventory("sword");
+addItemToInventory("shield");
+console.log(inventory);
 
 
-/* Passing Data into a Function */
-console.log("\nPassing Data into a Function");
+// Get the player name from the user in the console
+let player = input.question("Please enter your name: ");
 
-function formatDate(weekday, mm, dd, yyyy) {
-  return `${weekday}, ${mm}/${dd}/${yyyy}`;
-}
-
-// Store a formatted date in a variable and then print it
-let formattedDate = formatDate("Friday", "10", "07", "2022");
-console.log(formattedDate);
-
-
-/* Flexible Functions: Optional Parameters */
-console.log("\nFlexible Functions: Optional Parameters");
-
-function getFullName(fName, lName, title = '') {
-  let fullName = '';
-  if (title !== '') {         // or, if (title)
-    fullName += `${title} `;
-  }
-  fullName += `${fName} ${lName}`;
-  return fullName;
-}
-
-// Call the function twice, once with and once without using the third parameter
-console.log(getFullName("Jane", "Smith", "Dr."));
-console.log(getFullName("Bob", "Jones"));
-
-
-/** OUTPUT: TO RETURN OR NOT TO RETURN? **/
-
-/* Making Use of Return Values */
-console.log("\nMaking Use of Return Values");
-
-function addThreeNums(num1, num2, num3) {
-  return num1 + num2 + num3;
-}
-
-// Store the sum in a variable, then print it in a template literal
-let sumOfThree = addThreeNums(2, 6, 1);
-console.log(`sumOfThree is ${sumOfThree}`); // 9
-
-// Print the returned value directly
-console.log(addThreeNums(5, 10, 42)); // 57
-
-// Call the function from within a template literal as you print it
-console.log(`The sum of 8, 27, and 5 is ${addThreeNums(8, 27, 5)}.`);
-
-
-/* The Return Keyword is Optional */
-console.log("\nThe Return Keyword is Optional");
-
-let allPrepWork = [];
-let startedPrepWork = false;
-
-function submitPrepWork(work) {
-  allPrepWork.push(work);
-  startedPrepWork = true;
-}
-
-// Call the function and pass in 'reading'
-submitPrepWork('reading');
-// Print the current value of startedPrepWork
-console.log(startedPrepWork);
-// Call the function again and pass in 'exercises'
-submitPrepWork('exercises');
-// Print the current value of allPrepWork
-console.log(allPrepWork);
-
-
-/* Stopping a Function Early */
-console.log("\nStopping a Function Early");
-
-function divideNums(num1, num2) {
-  if (num2 === 0) {
-		return `To ${num1 / num2} and beyond!`;
-  }
-  return num1 / num2;
-}  
-
-// Demonstrate both regular usage and handling division by zero
-console.log(divideNums(6, 3));
-console.log(divideNums(4, 0));
-
-
-/** VARIABLE SCOPE **/
-
-/* Local Variables */
-console.log("\nLocal Variables");
-
-let user = "Ella";
-
-function greetUser(message) {
-  let greeting = `${message}, ${user}!`;
+function greetPlayer(message) {
+  let greeting = `${message}, ${player}!`;
   console.log(greeting); // just print, no return value
 }
 
-greetUser("Good morning");
+greetPlayer("Good morning");
 
-console.log(user); // OK - name is in scope
+console.log(player); // OK - name is in scope
 
 // These are out of scope and will cause a ReferenceError
 // console.log(message);
 // console.log(greeting);
 
+let name = "Zelda";
 
-/* Variable Shadowing */
-console.log("\nVariable Shadowing");
-
-let color = "black";
-
-function describeItem(item, color) {
-	console.log(`It's a ${color} ${item}!`);
+function announceCharacter(name) {
+	console.log(`You meet ${name} as you walk through the door.`);
 }
 
-describeItem("box", "blue");
-console.log(color);
-
-
-/** FUNCTION COMPOSITION **/
-
-/* Composing Functions */
-console.log("\nComposing Functions");
-
-function subtotal(arr) {
-  let sum = 0;
-  for (let i=0; i < arr.length; i++) {
-    sum += arr[i];
-  }
-  return sum;
-}
-
-function getTotals(month, arr1, arr2) {
-  let div1 = subtotal(arr1);
-  let div2 = subtotal(arr2);
-  return `In the month of ${month}, Division 1 had $${div1} in earnings, while Division 2 had $${div2} in earnings. Total earnings was $${div1 + div2}.`;
-} 
-
-let earnings1 = [13056, 29430, 10230, 57283];
-let earnings2 = [20435, 62433, 19857];
-
-// Demonstrate use of getTotals() with the test data given above
-console.log(getTotals("March", earnings1, earnings2));
+announceCharacter("Ganon");
+console.log(name);
