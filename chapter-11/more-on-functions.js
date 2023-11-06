@@ -84,7 +84,6 @@ function processEach(arr, func) {
 }
 
 /* Using an Existing Function as an Argument */
-console.log("\nUsing an Existing Function as an Argument:");
 
 // Write a function that will convert a number into a string that has a length of exactly 3, with leading zeros if the number is less than 3 digits long. The function should simply print the string and does not need a return value.
 function printSubjectTattoo(num) {
