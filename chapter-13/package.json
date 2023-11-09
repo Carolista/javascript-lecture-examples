@@ -1,0 +1,14 @@
+{
+  "name": "Chapter 13 Dependencies",
+  "version": "1.0.0",
+  "description": "This package.json file includes all dependencies needed to run code within files contained in this directory",
+  "main": "main.js",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Caroline R. Jones",
+  "license": "ISC"
+}
