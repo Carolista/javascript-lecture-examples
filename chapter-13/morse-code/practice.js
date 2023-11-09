@@ -8,7 +8,7 @@ const funcs = require("./funcs");
 let char = "w";
 
 // Call the function and store returned value in a variable, translatedChar
-translatedChar = funcs.translateChar(char);
+let translatedChar = funcs.translateChar(char);
 
 // Print a sentence that states the character and its translation
 console.log(`In Morse code, the letter '${char}' is: \n${translatedChar}\n`);
@@ -28,7 +28,7 @@ console.log(`In Morse code, the word '${word}' is: \n${translatedWord}\n`);
 let phrase = "Dammit, Jim - I'm a doctor, not a coder!";
 
 // Call the function and store returned value in a variable, translatedPhrase
-translatedPhrase = funcs.translateAll(phrase);
+let translatedPhrase = funcs.translateAll(phrase);
 
 // Print a sentence stating the phrase and its translation
 console.log(`In Morse code, the phrase '${phrase}' is: \n${translatedPhrase}\n`);
