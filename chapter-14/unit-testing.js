@@ -17,7 +17,7 @@ let msPerYear = 1000 * 60 * 60 * 24 * 365.25;
 
 
 /* 
-	In the corresponding spec file, write a test for each property in the object below. Fix any mistakes that are uncovered by the tests.
+	In the corresponding test file, write a test for each property in the object below. Fix any mistakes that are uncovered by the tests.
 */
 let bucky = {
 	fullName: "James Buchanan Barnes",
