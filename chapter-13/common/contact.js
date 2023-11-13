@@ -9,11 +9,11 @@ const contact = {
 
 const businessHours = {
 	Sunday:	"Closed",
-	Monday:	"9AM–5PM",
-  Tuesday: "9AM–5PM",
-	Wednesday: "9AM–5PM",
-	Thursday: "9AM–5PM",
-	Friday: "9AM–5PM",
+	Monday:	"9AM-5PM",
+  Tuesday: "9AM-5PM",
+	Wednesday: "9AM-5PM",
+	Thursday: "9AM-5PM",
+	Friday: "9AM-5PM",
 	Saturday: "Closed"
 }
 
@@ -21,7 +21,7 @@ function formatBusinessHours() {
 	let hours = "Open for Business:\n\n";
 	for (day in businessHours) {
 		if (businessHours[day] !== "Closed") {
-			hours += `\t${day}: ${businessHours[day]}\n`	
+			hours += `\t${day}: ${businessHours[day]}\n`;	
 		}
 	}
 	return hours;
