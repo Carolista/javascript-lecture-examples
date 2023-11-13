@@ -70,7 +70,7 @@ beforeEach(function () {
 		nickname: "Cap",
 		age: Math.round((new Date() - new Date(1918, 7, 4)) / msPerYear),
 		catchphrases: ["I could do this all day.", "Language!"]
-	}
+	};
 });
 
 // Write a describe block for the isAlphaOnly function
@@ -85,7 +85,7 @@ describe('The isAlphaOnly function', function() {
 	// NEGATIVE CASES
 	// Write tests for non-alpha characters like numbers and punctuation
 	test('should return false if the string has numeric characters', function() {
-		cap.age = String(cap.age);  // overwrite to prove beforeEach() works
+    cap.age = String(cap.age);
 		expect(isAlphaOnly(cap.age)).toBe(false);
 	});
 	test('should return false if the string has punctuation', function() {
@@ -104,6 +104,7 @@ describe('The isAlphaOnly function', function() {
 	});	
 	// Write a test for non-string types (not allowed)
 	test('should return false if value is not a string type', function() {
+    expect(typeof cap.age).toBe("number");
 		expect(isAlphaOnly(cap.age)).toBe(false);
 	});
 	// Write a test for null value
