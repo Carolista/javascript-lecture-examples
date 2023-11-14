@@ -1,3 +1,15 @@
+// LECTURE EXAMPLES
+// WEBDEV UNIT 1, CHAPTER 18: CLASSES
+
+/* 
+	This is the SOLUTION CODE. Switch back to the main branch to use the starter code.
+
+	If Carrie is your primary instructor, 
+  you can locate the YouTube playlist for your cohort here:
+	https://youtube.com/@CodeWithCarrie
+*/
+
+
 // Classes are imported here for use below
 const Beverage = require('./classes/Beverage');
 const DietSoda = require('./classes/DietSoda');
