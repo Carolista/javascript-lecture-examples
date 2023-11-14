@@ -58,7 +58,7 @@ let pizzaPlanet = {
 	doesDeliveries: true,
 	videoGames: null,
 	play: playGame // must reference function, not call it
-}
+};
 
 // Print the videoGames property
 console.log(pizzaPlanet.videoGames);
@@ -67,4 +67,4 @@ console.log(pizzaPlanet.videoGames);
 console.log(pizzaPlanet.hours);
 
 // Call the play method
-console.log(pizzaPlanet.play());
+pizzaPlanet.play();
