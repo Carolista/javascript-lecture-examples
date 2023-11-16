@@ -72,7 +72,7 @@ drPepper.describe();
 
 // In DietSoda.js, define the DietSoda class before continuing
 
-// Create cokeZero, caffFreeDietPepsi, and dietPepsi objects from the DietSoda class
+// Create cokeZero, caffFreeDietCoke, and dietPepsi objects from the DietSoda class
 let cokeZero = new DietSoda("Coke Zero", 12, "can", true, "aspartame");
 let caffFreeDietCoke = new DietSoda("Caffeine-Free Diet Coke", 10, "bottle", false, "aspartame");
 let dietPepsi = new DietSoda("Diet Pepsi", 20, "bottle", true, "sucralose");
