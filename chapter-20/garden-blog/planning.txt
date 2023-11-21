@@ -1,0 +1,30 @@
+LECTURE EXAMPLES
+WEBDEV UNIT 1, CHAPTER 18: CLASSES
+
+This is the SOLUTION CODE. Switch back to the main branch to use the starter code.
+
+If Carrie is your primary instructor, 
+you can locate the YouTube playlist for your cohort here:
+https://youtube.com/@CodeWithCarrie
+
+
+It's helpful to plan out your page. What kind of content, images, links, etc. will you need?
+
+
+Report on today's activities
+
+Detail plans for tomorrow:
+  - Sequential tasks
+  - Each plant's requirements (quantity, cluster?, spacing, depth)
+
+Share recommendation for bulbs:
+  Breck's https://brecks.com
+
+IMAGES
+Float general image to right at top (use local file)
+Use images in info table for flowers - sources:
+  Crocuses https://drive.google.com/uc?export=view&id=188YN_LwrZ8sQRc188UiCPWFiuKVCSx02
+  Hyacinth https://drive.google.com/uc?export=view&id=1wZU8kWKcTWCIEMjz-Ce7dTU8Fcb-NM9I
+  Daffodils https://drive.google.com/uc?export=view&id=1aA8X-YI8kQNF5nITzv2MAKKZYSgC16YT
+  Tulips https://drive.google.com/uc?export=view&id=1Vl0Ch4MQslwh9EyhnGX1RK9YZbPuHtvo
+
