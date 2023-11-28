@@ -1,0 +1,155 @@
+/* 
+  LECTURE EXAMPLES
+  WEBDEV UNIT 1, CHAPTER 21: CSS
+
+  This is the SOLUTION CODE. Switch back to the main branch to use the starter code.
+
+  If Carrie is your primary instructor, 
+  you can locate the YouTube playlist for your cohort here:
+  https://youtube.com/@CodeWithCarrie
+*/
+
+/* TODO: Add CSS for the body — change the font family */
+/* TODO: Change the width, padding, margin, and box-sizing */
+/* TODO: Change the background to use the blossom image, fixed */
+body {
+  color: #1f451f;
+  background: url('./images/blossoms.jpg') fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw; /* set to 80vw if not setting box-sizing property below */
+  padding: 0 10vw; /* top/bottom left/right */
+  margin: 0;
+  box-sizing: border-box; /* allows for full width */
+}
+
+/* TODO: Set the background of header and footer to dark green and text color to white */
+/* TODO: Set the padding to 30px for left and right and 10px for top and bottom */
+header,
+footer {
+  color: white;
+  background: rgb(32, 70, 32);
+  padding: 10px 30px;
+}
+/* TODO: Set the background of main to white */
+/* TODO: Set the padding to 30px on all sides */
+main {
+  background-color: white;
+  padding: 30px;
+}
+
+/* TODO: Change the font family to a cursive script for h1 and increase the font size */
+/* TODO: Adjust the top and bottom margins */
+h1 {
+  font-family: cursive;
+  font-size: 4rem;
+  margin: 10px 0;
+}
+
+/* TODO: Change the font weight of h2 to lighter and font size to 1.2rem */
+/* TODO: Make it all uppercase and increase letter spacing */
+/* TODO: Set top and bottom margin to 10px; */
+h2 {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+
+/* TODO: Apply a background color, color, font size and padding to h3 */
+h3 {
+  background-color: rgb(54, 122, 33);
+  color: white;
+  font-size: 1.3rem;
+  padding: 8px;
+}
+
+/* TODO: Apply a gradient background to h4 and make it bold and uppercase with some padding */
+h4 {
+  color: white;
+  background: linear-gradient(to right, rgb(111, 175, 89), white);
+  font-weight: bolder;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 6px;
+}
+
+/* TODO: Alter the margins on h3 and h4 */
+h3,
+h4 {
+  margin: 30px 0 0; /* top left/right bottom */
+}
+
+/* TODO: Change the bullet points to squares */
+ul {
+  list-style-type: square;
+}
+
+/* TODO: Create a class to selectively add a bottom margin as needed */
+.extra-space-below {
+  margin-bottom: 15px;
+}
+
+/* TODO: Set the font color for the table */
+table {
+  color: #333;
+}
+
+/* TODO: Give th text center alignment, consistent width, and padding */
+th {
+  text-align: center;
+  width: 80px;
+  padding: 8px 0;
+}
+
+/* TODO: Set consistent height for td */
+td {
+  height: 80px;
+}
+
+/* TODO: Set background colors for every other table row */
+th,
+tr:nth-child(even) {
+  background-color: #bbb; /* equivalent of #bbbbbb */
+}
+tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+/* TODO: Change styling of em */
+em {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+/* TODO: Change styling of a */
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* TODO: Set class for special block with various styling and animation */
+.special-block {
+  font-weight: bold;
+  width: 50%;
+  min-width: 200px;
+  padding: 10px;
+  margin: 20px auto; /* auto will center it */
+  outline: 3px double rgb(32, 70, 32);
+  animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: darkmagenta;
+    outline-color: darkblue;
+  }
+  50% {
+    color: darkorange;
+    outline-color: darkgreen;
+  }
+  100% {
+    color: darkmagenta;
+    outline-color: darkblue;
+  }
+}
