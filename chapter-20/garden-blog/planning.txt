@@ -1,5 +1,5 @@
 LECTURE EXAMPLES
-WEBDEV UNIT 1, CHAPTER 18: CLASSES
+WEBDEV UNIT 1, CHAPTER 20: HTML
 
 This is the SOLUTION CODE. Switch back to the main branch to use the starter code.
 
