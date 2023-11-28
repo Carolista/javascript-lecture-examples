@@ -85,11 +85,6 @@ ul {
   list-style-type: square;
 }
 
-/* TODO: Create a class to selectively add a bottom margin as needed */
-.extra-space-below {
-  margin-bottom: 15px;
-}
-
 /* TODO: Set the font color for the table */
 table {
   color: #333;
@@ -128,8 +123,18 @@ a {
   text-decoration: none;
 }
 
+/* TODO: Create a class to selectively add a bottom margin as needed */
+.extra-space-below {
+  margin-bottom: 15px;
+}
+
+/* TODO: Create a class to bump up font size to 1.2rem */
+.bigger-text {
+  font-size: 1.2rem;
+}
+
 /* TODO: Set class for special block with various styling and animation */
-.special-block {
+#special {
   font-weight: bold;
   width: 50%;
   min-width: 200px;
