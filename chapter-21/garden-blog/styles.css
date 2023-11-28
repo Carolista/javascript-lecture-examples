@@ -135,21 +135,25 @@ a {
   min-width: 200px;
   padding: 10px;
   margin: 20px auto; /* auto will center it */
-  outline: 3px double rgb(32, 70, 32);
+  outline: 8px double rgb(32, 70, 32);
   animation: color-change 2s infinite;
 }
 
 @keyframes color-change {
   0% {
     color: darkmagenta;
+    outline-color: darkgreen;
+  }
+  33% {
+    color: darkorange;
     outline-color: darkblue;
   }
-  50% {
-    color: darkorange;
-    outline-color: darkgreen;
+  67% {
+    color: darkcyan;
+    outline-color: darkred;
   }
   100% {
     color: darkmagenta;
-    outline-color: darkblue;
+    outline-color: darkgreen;
   }
 }
