@@ -49,7 +49,6 @@ window.addEventListener("load", function () {
 
   });
 
-  console.dir
   console.log("numButton", numButton);
   console.dir(numButton);
   console.log("numBox", numBox);
