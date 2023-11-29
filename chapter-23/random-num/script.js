@@ -49,11 +49,13 @@ window.addEventListener("load", function () {
 
   });
 
-  console.log("numButton", numButton);
+  console.log(numButton);
   console.dir(numButton);
-  console.log("numBox", numBox);
+
+  console.log(numBox);
   console.dir(numBox);
-  console.log("randomNum", randomNum);
+
+  console.log(randomNum);
   console.dir(randomNum);
   
 });
