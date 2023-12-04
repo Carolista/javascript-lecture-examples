@@ -88,10 +88,10 @@ window.addEventListener('load', function() {
     }
   });
   phoneInput.addEventListener('input', function() {
-    phoneEmail.innerHTML = `${phoneInput.value} | ${emailInput.value || 'Your Email'}`;
+    phoneEmail.innerHTML = `${phoneInput.value || 'Your Phone'} | ${emailInput.value || 'Your Email'}`;
   });
   emailInput.addEventListener('input', function() {
-    phoneEmail.innerHTML =  `${phoneInput.value || 'Your Phone'} | ${emailInput.value}`;
+    phoneEmail.innerHTML =  `${phoneInput.value || 'Your Phone'} | ${emailInput.value || 'Your Email'}`;
   });
 
   // Reset form & card preview
@@ -118,9 +118,9 @@ window.addEventListener('load', function() {
     address2.style.display = 'block';
   });
 
-  // Console.log something after a successful form submission
-  // This will run only after it passes built-in validation
+  // This will run only after the user passes built-in validation
   form.addEventListener('submit', function(event) {
+    // You could add custom validation here along with event.preventDefault() if they don't pass
     // We aren't really saving anything to a database in this example, but this is where we would do it
     console.log("Form successfully submitted.");
   });
