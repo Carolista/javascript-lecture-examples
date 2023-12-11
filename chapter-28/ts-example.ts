@@ -1,10 +1,10 @@
 // TypeScript Example
 
-let captainPike: string = "Captain Pike";
+let captainPike: string = 'Captain Pike';
 let yearsUntilDisaster: number = 10;
 let onDuty: boolean = true;
 
-let interests: string[] = ["cooking", "horseback riding"];
+let interests: string[] = ['cooking', 'horseback riding'];
 
 console.log(captainPike);
 console.log(yearsUntilDisaster);
