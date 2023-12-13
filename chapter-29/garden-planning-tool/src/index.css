@@ -1,4 +1,4 @@
-/* Global CSS — use anywhere without importing */
+/* Global CSS — use anywhere because it's imported in main.jsx */
 
 body {
   background-image: url('./assets/images/blossoms.jpg');

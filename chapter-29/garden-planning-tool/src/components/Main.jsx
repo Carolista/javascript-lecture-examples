@@ -1,6 +1,8 @@
 import AvailablePlant from './AvailablePlant';
 
 const Main = () => {
+
+  // Temporary test data
   let testPlants = [
     {
       id: 1,
@@ -29,6 +31,7 @@ const Main = () => {
     <main>
       <div id="left-column">
         <h3>Available Plants</h3>
+        {/* We will loop over testPlants in the future to create these */}
         <AvailablePlant plant={testPlants[0]} />
         <AvailablePlant plant={testPlants[1]} />
         <AvailablePlant plant={testPlants[2]} />

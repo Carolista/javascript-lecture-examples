@@ -1,6 +1,7 @@
 import { Component } from 'react';
 
-// Example of class-based component (phasing out)
+// Example of class-based component
+// (being phased out in favor of function-based components)
 export default class Header extends Component {
   render() {
     return (

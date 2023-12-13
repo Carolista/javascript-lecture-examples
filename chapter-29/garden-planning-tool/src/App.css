@@ -1,4 +1,5 @@
-/* CSS here is also global but I've put most of it in index.css */
+/* CSS here is effectively global because it's imported in App.jsx */
+/* but I've put most of my CSS in index.css */
 
 #page-layout {
   flex-direction: column;
