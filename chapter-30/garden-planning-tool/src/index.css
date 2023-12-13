@@ -1,0 +1,55 @@
+/* Global CSS — use anywhere because it's imported in main.jsx */
+
+body {
+  background-image: url('./assets/images/blossoms.jpg');
+  background-attachment: fixed;
+  font-family: 'Karla', sans-serif;
+  font-size: 14pt;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(#508015, #335b03);
+  color: white;
+  height: 60px;
+  padding: 0px 20px;
+}
+
+main {
+  flex-direction: row;
+  width: 100%;
+  margin: 10px 0 100px;
+}
+
+div {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: 'Unica One', cursive;
+  font-size: 32px;
+  margin: 0;
+}
+
+h3 {
+  color: #508015;
+  font-family: 'Karla', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 0;
+  border-bottom: 2px solid #508015;
+}
+
+#left-column {
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+}
