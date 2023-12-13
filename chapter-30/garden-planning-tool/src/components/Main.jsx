@@ -1,4 +1,5 @@
 import AvailablePlant from './AvailablePlant';
+import Flowerbed from './Flowerbed';
 
 const Main = () => {
 
@@ -8,34 +9,47 @@ const Main = () => {
       id: 1,
       name: 'Hyacinth',
       color: 'blue',
-      image: 'hyacinth-blue.png',
-      numAvailable: 8,
+      image:
+        'https://drive.google.com/uc?export=view&id=1wZU8kWKcTWCIEMjz-Ce7dTU8Fcb-NM9I',
+      numAvailable: 6,
+      numAllocated: 2,
     },
     {
       id: 2,
       name: 'Tulip',
       color: 'red',
-      image: 'tulip-red.png',
-      numAvailable: 12,
+      image:
+        'https://drive.google.com/uc?export=view&id=1Vl0Ch4MQslwh9EyhnGX1RK9YZbPuHtvo',
+      numAvailable: 6,
+      numAllocated: 6,
     },
     {
       id: 3,
       name: 'Daffodil',
       color: 'yellow',
-      image: 'daffodil-yellow.png',
-      numAvailable: 16,
+      image:
+        'https://drive.google.com/uc?export=view&id=1BwQ_BdSgB6XGdU_OOm5iYQFXKjKEcW1Q',
+      numAvailable: 4,
+      numAllocated: 12,
     },
   ];
 
+  let availablePlants = testPlants.map(plant => {
+    return <AvailablePlant key={plant.id} plant={plant} />
+  });
+
   return (
     <main>
+
       <div id="left-column">
         <h3>Available Plants</h3>
-        {/* We will loop over testPlants in the future to create these */}
-        <AvailablePlant plant={testPlants[0]} />
-        <AvailablePlant plant={testPlants[1]} />
-        <AvailablePlant plant={testPlants[2]} />
+        {availablePlants}
       </div>
+
+      <div id="right-column">
+        <Flowerbed selectedPlants={testPlants} />
+      </div>
+
     </main>
   );
 };
