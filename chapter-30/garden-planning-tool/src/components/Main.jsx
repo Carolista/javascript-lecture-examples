@@ -2,7 +2,6 @@ import AvailablePlant from './AvailablePlant';
 import Flowerbed from './Flowerbed';
 
 const Main = () => {
-
   // Temporary test data
   let testPlants = [
     {
@@ -34,22 +33,20 @@ const Main = () => {
     },
   ];
 
-  let availablePlants = testPlants.map(plant => {
-    return <AvailablePlant key={plant.id} plant={plant} />
+  let availablePlantsJSX = testPlants.map(plant => {
+    return <AvailablePlant key={plant.id} plant={plant} />;
   });
 
   return (
     <main>
-
       <div id="left-column">
         <h3>Available Plants</h3>
-        {availablePlants}
+        {availablePlantsJSX}
       </div>
 
       <div id="right-column">
         <Flowerbed selectedPlants={testPlants} />
       </div>
-
     </main>
   );
 };

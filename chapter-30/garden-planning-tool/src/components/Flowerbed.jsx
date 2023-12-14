@@ -1,7 +1,6 @@
-import SelectedPlant from "./SelectedPlant";
+import SelectedPlant from './SelectedPlant';
 
 const Flowerbed = props => {
-
   const plantsJSX = props.selectedPlants.map(plant => {
     return <SelectedPlant key={plant.id} plant={plant} />;
   });
@@ -17,7 +16,7 @@ const Flowerbed = props => {
         <p>Select a plant to get started!</p>
       )}
     </div>
-  )
-}
+  );
+};
 
 export default Flowerbed;
