@@ -1,0 +1,11 @@
+/* CSS here is effectively global because it's imported in App.jsx */
+/* but I've put most of my CSS in index.css */
+
+#page-layout {
+  flex-direction: column;
+  background-color: white;
+  height: 100%;
+  min-height: 100vh;
+  width: 80vw;
+  margin: 0 5vw 0 15vw;
+}

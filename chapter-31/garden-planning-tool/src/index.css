@@ -1,0 +1,178 @@
+/* Global CSS — use anywhere because it's imported in main.jsx */
+
+body {
+  background-image: url('./assets/images/blossoms.jpg');
+  background-attachment: fixed;
+  font-family: 'Karla', sans-serif;
+  font-size: 14pt;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(#508015, #335b03);
+  color: white;
+  height: 60px;
+  padding: 0px 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 10px 0 100px;
+}
+
+div {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: 'Unica One', cursive;
+  font-size: 32px;
+  margin: 0;
+}
+
+h3 {
+  color: #508015;
+  font-family: 'Karla', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 0;
+  border-bottom: 2px solid #508015;
+}
+
+h4 {
+  font-family: 'Unica One', cursive;
+  font-size: 24px;
+  margin: 0;
+}
+
+img {
+  border-radius: 4px;
+}
+
+button {
+  background-color: #508015;
+  color: white;
+  font-size: 0.6rem;
+  height: 16px;
+  margin-left: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #67a11f;
+}
+
+#left-column {
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+}
+
+#right-column {
+  flex-direction: column;
+  width: calc(100% - 300px);
+  padding: 20px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.card {
+  padding: 4px;
+  margin-bottom: 10px;
+  border: 2px solid #eee;
+  border-radius: 6px;
+}
+
+.available-plant-card {
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 6px;
+  max-height: 62px;
+}
+
+.img-txt-combo {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.amount-txt {
+  color: #508015;
+  text-transform: uppercase;
+}
+
+.arrow-group {
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 6px;
+  margin-right: 6px;
+}
+
+.chevron-left {
+  color: #ac0542;
+  cursor: pointer;
+  &:hover {
+    color: #c90c52;
+    transform: scale(1.1);
+  }
+}
+
+.chevron-right {
+  color: #427405;
+  cursor: pointer;
+  &:hover {
+    color: #67a11f;
+    transform: scale(1.1);
+  }
+}
+
+.flowerbed {
+  flex-direction: column;
+  padding: 16px;
+  gap: 20px;
+  border-color: #508015;
+  border-style: solid;
+  border-width: 2px 2px 2px 12px;
+}
+
+.flowerbed-name {
+  align-items: center;
+}
+
+.plant-grid {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.selected-plant-card {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 162px;
+}
+
+.big-num {
+  color: #508015;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.unavailable {
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
