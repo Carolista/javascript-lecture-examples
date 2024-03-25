@@ -7,6 +7,5 @@ console.log("Welcome to LaunchCode, everyone!");
 
 // TODO: Use the newline character "\n" to print your city and state on two lines with one line of code
 // Put your code here
-console.log("St. Louis\nMissouri");
 
 // Run this file again in the terminal below
