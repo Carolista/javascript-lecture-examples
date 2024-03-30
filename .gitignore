@@ -1,5 +1,10 @@
-WIP
-
+# Prevent tens of thousands of files from being pushed to GitHub
+# These 
 **/node_modules
-**/package-lock.json
+
+# A Mac file for local use only
 **/.DS_Store
+
+# I don't need this to be pushed to GitHub
+# Because I don't require GitHub Actions for this repo
+**/package-lock.json
