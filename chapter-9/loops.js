@@ -157,7 +157,7 @@ const input = require('readline-sync');
 
 // Luke, Han, and Chewbacca are trying to rescue Leia, who is being held in cell #2187. Ask them for the cell block and if they are within the 2100-2200 blocks, tell them they're on the right track! Otherwise tell them to keep searching.
 let blockNum = input.question("What cell block are you at now? ");
-while (blockNum < 2100 || blockNum > 2200) {
+while (isNaN(blockNum) || blockNum < 2100 || blockNum > 2200) {
 	blockNum = input.question("Nope! Keep searching! ");
 }
 console.log("You're really close! Now find cell 2187!");
@@ -178,13 +178,13 @@ let leiaFound = false;
 for (let i=0; i < characters.length; i++) {
 	console.log(`\nSelecting the group at index ${i}:`);
 	for (let j=0; j < characters[i].length; j++) {
-		console.log(`\n  Checking the character at index ${j}...`)
+		console.log(`\n-- Checking the character at index ${j}...`)
 		if (characters[i][j] === "Princess Leia") {
-			console.log("\nFOUND HER! She has the plans!!!\n");
+			console.log("\n\tFOUND HER! She has the plans!!!\n");
 			leiaFound = true;
 			break;
 		} else {
-			console.log(`  Nope, that was ${characters[i][j]}`)
+			console.log(`\n\tNope, that was ${characters[i][j]}`)
 		}
 	}
 	if (leiaFound) {
