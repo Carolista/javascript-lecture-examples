@@ -23,7 +23,7 @@ function sayHello(firstName) {
 // Allow for a specific action verb
 function describeEnemies(enemyType, numEnemies, actionVerb) {
   if (numEnemies > 1) {
-    enemyType = "group of " + enemyType + "s";
+    enemyType = `group of ${numEnemies} ${enemyType}s`;
   } 
   return `A ${enemyType} is ${actionVerb} nearby.`;
 }
