@@ -76,25 +76,28 @@ console.log(readMessageInLights(msg2));
 
 /** HIGHER-ORDER FUNCTIONS **/
 
-// Write a function that will convert a number into a string that has a length of exactly 3, with leading zeros if the number is less than 3 digits long. The function should simply print the string and does not need a return value.
-function printSubjectTattoo(num) {
+/* Referencing an Existing Function as an Argument */
+
+// Write a function that will convert a number into a string that has a length of exactly 3, with leading zeros if the number is less than 3 digits long. The function should simply return the final string.
+function getSubjectTattoo(num) {
 	let numDigits = String(num).length;
 	let zeros = "0".repeat(3 - numDigits);
-	console.log(zeros + num);
+	return zeros + num;
 }
 
 // Test data
 let indigoSubjects = [1, 3, 4, 7, 8, 10, 11, 13, 15, 18];
 
-// TODO: Call the built-in array method .forEach() and pass in the test array with the new function (by name reference) to have it print a formatted line for every element in the array.
-indigoSubjects.forEach(printSubjectTattoo);
+// TODO: Call the built-in array method .map() and pass in the test array with the new function (by name reference) to have it create a new array with the formatted string for each tattoo. Print the new array.
+let tattoos = indigoSubjects.map(getSubjectTattoo);
+console.log(tattoos);
 
 
 /* Providing an Anonymous Function as an Argument */
 
 let hellfireClub = ["Eddie", "Gareth", "Jeff", "Mike", "Dustin", "Lucas", "Erica"];
 
-// TODO: Use .forEach() again, but this time write an anonymous function in place that prints "_____ is a member of the Hellfire Club!" for each element in the array above... unless that person is Erica, in which case it should say "Lady Applejack, the MOST BADASS member" instead of "a member".
+// TODO: Use the built-in array method .forEach(), passing in an anonymous function that prints "_____ is a member of the Hellfire Club!" for each element in the array above... unless that person is Erica, in which case it should say "Lady Applejack, the MOST BADASS member" instead of "a member".
 hellfireClub.forEach(function (name) {
 	if (name === "Erica") {
 		console.log(`${name} is Lady Applejack, the MOST BADASS member of the Hellfire Club!`);
