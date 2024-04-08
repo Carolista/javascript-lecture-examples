@@ -223,3 +223,19 @@ console.log(motleyCrew);
 for (let i = 0; i < motleyCrew.length; i++) {
 	console.log(`${motleyCrew[i].name} is a ${motleyCrew[i].position}.`)
 } 
+
+
+/** Random Selection **/
+
+// TODO: Write a function that will choose a random number
+function getRandomIdx(arr) {
+  return Math.floor(arr.length * Math.random());
+}
+
+// TODO: Write a function that will return a random member of the motleyCrew for swabbing the deck
+function getRandomDeckSwabber(arr) {
+  let randIdx = getRandomIdx(arr);
+  return arr[randIdx];
+}
+
+console.log(getRandomDeckSwabber(motleyCrew));
