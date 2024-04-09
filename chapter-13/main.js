@@ -36,5 +36,5 @@ console.log(utils.roundToDec(longDecNum, 3));
 console.log(utils.getRandNum(100));
 
 // Ask a user for a book title, then print it in title case using the third function from utils.js
-let fullName = input.question('What is one of your favorite books? ');
-console.log(utils.getTitleCase(fullName));
+let bookTitle = input.question("What is one of your favorite books? ");
+console.log(utils.getTitleCase(bookTitle));
