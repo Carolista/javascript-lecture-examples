@@ -4,7 +4,7 @@
 
 // Import readline-sync and translateAll
 const input = require("readline-sync");
-const { translateAll } = require("./funcs");
+const funcs = require("./funcs");
 
 function runProgram() {
 
@@ -18,7 +18,7 @@ function runProgram() {
 			console.log("\nThanks for trying out the translator! Goodbye.\n");
 			break;
 		} else {
-			console.log(translateAll(phrase));
+			console.log(funcs.translateAll(phrase));
 		}
 	}
 
