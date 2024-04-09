@@ -5,7 +5,7 @@ const frontOrg = {
 	email: "info@acme.com",
 	phone: "(314) 555-ACME",
 	website: "www.acme.com"
-}
+};
 
 const businessHours = {
 	Sunday:	"Closed",
@@ -15,7 +15,7 @@ const businessHours = {
 	Thursday: "9AM-5PM",
 	Friday: "9AM-5PM",
 	Saturday: "Closed"
-}
+};
 
 function formatBusinessHours() {
 	let hours = "Open for Business:\n\n";
