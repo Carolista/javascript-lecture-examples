@@ -13,7 +13,7 @@
 /* 
 	In the corresponding spec file, write a test for the msPerYear below.
 */
-let msPerYear = 1000 * 60 * 60 * 24 * 365.25;
+let MS_PER_YEAR = 1000 * 60 * 60 * 24 * 365.25;
 
 
 /* 
@@ -23,7 +23,7 @@ let bucky = {
 	fullName: "James Buchanan Barnes",
 	nickname: "Bucky", // fixed it
 	triggerWords: ["longing", "rusted", "furnace", "daybreak", "seventeen", "benign", "nine", "homecoming", "one", "freight car"], // fixed it
-	age: Math.round((new Date() - new Date(1917, 10, 3)) / msPerYear),
+	age: Math.round((new Date() - new Date(1917, 10, 3)) / MS_PER_YEAR),
 	isHydraAgent: false // fixed it
 };
 
@@ -50,7 +50,7 @@ function isAlphaOnly(str) {
 
 // Export items to be tested
 module.exports = {
-	msPerYear: msPerYear,
+	MS_PER_YEAR: MS_PER_YEAR,
 	bucky: bucky,
 	isAlphaOnly: isAlphaOnly
 };
