@@ -1,5 +1,6 @@
 // Class 17 Lecture: The Modern JavaScript Landscape
 
+
 /** TERNARY OPERATOR **/
 
 let pikeInChair = true; // otherwise Spock is in command
@@ -15,6 +16,7 @@ let phrase2 = pikeInChair ? 'Hit it!' : 'I would like the ship to go... now.';
 
 console.log(phrase2);
 
+
 /** SPREAD OPERATOR **/
 
 let crew1 = ['Captain Pike', 'Number One', 'Spock'];
@@ -25,9 +27,15 @@ let enterpriseCrew = [...crew1, ...crew2, ...crew3];
 
 console.log(enterpriseCrew);
 
+
 /** DESTRUCTURING **/
 
 /* Destructuring Arrays */
+
+// Rather than using the two lines of code commented out below, 
+// use destructuring to assign values to doctor and nurse 
+// let doctor = crew3[0];
+// let nurse = crew3[1];
 
 let [doctor, nurse] = crew3;
 
@@ -39,6 +47,7 @@ let [captain, , scienceOfficer] = crew1;
 console.log(captain);
 console.log(scienceOfficer);
 
+
 /* Destructuring Objects */
 
 let enterprise = {
@@ -47,9 +56,15 @@ let enterprise = {
   class: 'Constitution',
 };
 
+// Rather than using the two lines of code commented out below, 
+// use destructuring to assign values to shipName and registry
+// let shipName = enterprise.shipName;
+// let registry = enterprise.registryNumber;
+
 const { shipName, registryNumber: registry } = enterprise;
 console.log(shipName);
 console.log(registry);
+
 
 /** FOR...OF LOOPS **/
 
@@ -77,6 +92,7 @@ for (let [num, member] of fedFoundersMap) {
   console.log(`${num}. ${member}`);
 }
 
+
 /** ARROW FUNCTIONS **/
 
 function explore(planet) {
@@ -103,7 +119,8 @@ const hitIt = (speedFactor, type) =>
 hitIt('Full');
 hitIt(8, 'warp');
 
-/** MAPPING OVER AN ARRAY **/
+
+/** MAPPING OVER AN ARRAY WITH ARROW FUNCTION **/
 
 let planets = ['andoria', 'Vulcan', 'earth', 'KrOnOs', 'Risa'];
 
