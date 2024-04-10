@@ -11,7 +11,7 @@
 
 
 /* 
-	In the corresponding spec file, write a test for the msPerYear below.
+	In the corresponding spec file, write a test for the MS_PER_YEAR constant below.
 */
 let MS_PER_YEAR = 1000 * 60 * 60 * 24 * 365.25;
 
