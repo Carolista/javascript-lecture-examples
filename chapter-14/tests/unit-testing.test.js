@@ -40,11 +40,11 @@ describe('The bucky object', function () {
     expect(examples.bucky.triggerWords).toContain('homecoming');
   });
 
-  // Test that the age property is greater than 100
-  test("should have a property called 'age' that is greater than 100 and less than 120", function () {
-    // console.log(bucky.age);
-    expect(examples.bucky.age).toBeGreaterThan(100);
-    expect(examples.bucky.age).toBeLessThan(120);
+  // Test that the age method returns a number greater than 100 and less than 120
+  test("should have a method called 'calculateAge' that returns number greater than 100 and less than 120", function () {
+    // console.log(bucky.calculateAge());
+    expect(examples.bucky.calculateAge()).toBeGreaterThan(100);
+    expect(examples.bucky.calculateAge()).toBeLessThan(120);
   });
 
   // Test that Bucky is no longer a Hydra agent
