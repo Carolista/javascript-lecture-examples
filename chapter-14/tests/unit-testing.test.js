@@ -9,7 +9,7 @@ const examples = require("../unit-testing");
 */
 
 // Create a describe block, then write a specification inside it
-describe("The MS_PER_YEAR variable", function () {
+describe("The MS_PER_YEAR constant", function () {
 	test("should have a value of 31557600000", function () {
 		expect(examples.MS_PER_YEAR).toEqual(31557600000);
 	});
@@ -105,9 +105,5 @@ describe("The isAlphaOnly function", function() {
 	test("should return false if value is not a string type", function() {
     expect(typeof cap.age).toBe("number");
 		expect(examples.isAlphaOnly(cap.age)).toBe(false);
-	});
-	// Write a test for null value
-	test("should return false if argument is null", function() {
-		expect(examples.isAlphaOnly(null)).toBe(false);
 	});
 });

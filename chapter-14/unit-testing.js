@@ -35,8 +35,7 @@ let bucky = {
   The function should return true or false depending on whether all of its characters are alphabetical or not.
 */
 function isAlphaOnly(str) {
-	// !str will catch both null and empty string
-	if (!str || typeof str !== "string") {
+	if (typeof str !== "string" || str === "") {
 		return false;
 	}
 	let allowed = "abcdefghijklmnopqrstuvwxyz ";
