@@ -103,8 +103,8 @@ describe('The isAlphaOnly function', function () {
     expect(examples.isAlphaOnly('')).toEqual(false);
   });
   // Write a test for ONLY spaces (no other characters)
-  test('should return true if the string has ONLY spaces', function () {
-    expect(examples.isAlphaOnly(" ")).toEqual(true);
+  test('should return false if the string has ONLY spaces', function () {
+    expect(examples.isAlphaOnly(" ")).toEqual(false);
   });
   // Write a test for non-string types (not allowed)
   test('should return false if value is not a string type', function () {
