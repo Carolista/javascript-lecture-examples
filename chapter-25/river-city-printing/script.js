@@ -87,12 +87,13 @@ window.addEventListener('load', function() {
       address2.style.display = 'block';
     }
   });
-  phoneInput.addEventListener('input', function() {
+
+  // Update phone and email on same line
+  function updatePhoneAndEmail() {
     phoneEmail.innerHTML = `${phoneInput.value || 'Your Phone'} | ${emailInput.value || 'Your Email'}`;
-  });
-  emailInput.addEventListener('input', function() {
-    phoneEmail.innerHTML =  `${phoneInput.value || 'Your Phone'} | ${emailInput.value || 'Your Email'}`;
-  });
+  }
+  phoneInput.addEventListener('input', updatePhoneAndEmail);
+  emailInput.addEventListener('input', updatePhoneAndEmail);
 
   // Reset form & card preview
   resetButton.addEventListener('click', function(event) {
