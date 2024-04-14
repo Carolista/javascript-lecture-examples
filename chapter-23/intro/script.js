@@ -1,7 +1,10 @@
 window.addEventListener('load', function() {  
 
   console.log(window);
-  // let response = window.confirm("Do you want to continue?");
+
+  // window.alert("\nClick OK after you've read this message!");
+
+  // let response = confirm("\nYou can choose OK or Cancel...");
   // console.log(response);
 
 
