@@ -7,7 +7,8 @@ window.addEventListener('load', function() {
   // let response = confirm("\nYou can choose OK or Cancel...");
   // console.log(response);
 
-  console.log(document);
+  console.log("\nDocument LOG:\n", document);
+  console.log("\nDocument DIR:")
   console.dir(document);
 
 
