@@ -15,7 +15,7 @@ function getPrize(kid, prize) {
 	console.log(`\nSomewhere nearby, you could swear you hear several tiny voices say, "It's the claaaawwwww! You have been chosen!"`);
 	// Throw an exception if Sid tries to get Buzz out of the machine
 	if (kid === "Sid" && prize === "Buzz Lightyear") {
-		// throw new Error(`Hey! That ${prize} isn't supposed to be in there!`);
+		throw new Error(`Hey! That ${prize} isn't supposed to be in there!`);
 	}
 	console.log(`\nCongrats, ${kid}! you got the ${prize} toy!`);
 }
@@ -24,7 +24,7 @@ function getPrize(kid, prize) {
 getPrize("Andy", "three-eyed alien");
 
 // Have Sid try for Buzz Lightyear
-getPrize("Sid", "Buzz Lightyear");
+// getPrize("Sid", "Buzz Lightyear");
 
 
 /* Try, Catch, Finally */
@@ -42,7 +42,7 @@ function executeReconPlanCharlie(action) {
 	try {
 		// Move the reassignment and console.log below into the try block
 		action = action.toLowerCase();
-		if (actions.hasOwnProperty(action)) {
+		if (actions.hasOwnProperty(action)) { // or, if (action in actions)
 			console.log(actions[action]);
 		} else {
 			let customError = new Error(`\n${action} is not a valid action for the army men`);
