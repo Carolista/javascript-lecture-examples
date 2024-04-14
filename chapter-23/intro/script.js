@@ -7,11 +7,12 @@ window.addEventListener('load', function() {
   // let response = confirm("\nYou can choose OK or Cancel...");
   // console.log(response);
 
-
-  const intro = document.getElementById('intro');
-
   console.log(document);
   console.dir(document);
+
+
+
+  const intro = document.getElementById('intro');
 
   // Always available because it comes from browser's current version of the document
   console.log(intro.innerHTML);
