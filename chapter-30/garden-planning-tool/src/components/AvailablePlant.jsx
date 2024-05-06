@@ -4,14 +4,6 @@ const AvailablePlant = props => {
   // Use destructuring to avoid having to use props.plant.id, props.plant.name, etc
   let { name, color, image, numAvailable } = props.plant;
 
-  const handleReturnPlant = () => {
-    console.log(`This button will return 1 ${color} ${name}.`);
-  };
-
-  const handleAllocatePlant = () => {
-    console.log(`This button will allocate 1 ${color} ${name}.`);
-  };
-
   return (
     <div className="card available-plant-card">
       <div className="img-txt-combo">
@@ -25,12 +17,10 @@ const AvailablePlant = props => {
       <div className="arrow-group">
         <i
           className="chevron-left fa fa-chevron-circle-left"
-          title="Remove one plant from flowerbed"
-          onClick={handleReturnPlant}></i>
+          title="Remove one plant from flowerbed"></i>
         <i
           className="chevron-right fa fa-chevron-circle-right"
-          title="Add one plant to flowerbed"
-          onClick={handleAllocatePlant}></i>
+          title="Add one plant to flowerbed"></i>
       </div>
     </div>
   );
