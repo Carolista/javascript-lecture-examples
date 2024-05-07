@@ -18,7 +18,7 @@ const Flowerbed = ({ selectedPlants }) => {
   const handleCloseForm = event => {
     event.preventDefault();
     setEditing(false);
-  }
+  };
 
   const plantsJSX = selectedPlants.map(plant => {
     return <SelectedPlant key={plant.id} plant={plant} />;
@@ -29,7 +29,7 @@ const Flowerbed = ({ selectedPlants }) => {
       <div
         className="flowerbed-name"
         style={editing ? { opacity: 0.4 } : { opacity: 1 }}>
-        <h4>{flowerbedName || "My Flowerbed"}</h4>
+        <h4>{flowerbedName || 'My Flowerbed'}</h4>
         <button onClick={handleOpenForm} disabled={editing}>
           Edit
         </button>
@@ -37,7 +37,7 @@ const Flowerbed = ({ selectedPlants }) => {
       {editing && (
         <form>
           <input value={flowerbedName} onInput={handleNameInput} />
-          <button onClick={handleCloseForm}>Save</button>
+          <button onClick={handleCloseForm}>Done</button>
         </form>
       )}
       {selectedPlants.length ? (

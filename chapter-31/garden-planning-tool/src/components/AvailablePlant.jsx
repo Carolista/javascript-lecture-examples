@@ -1,6 +1,7 @@
 import { capitalize } from '../shared/utils';
 
 const AvailablePlant = props => {
+  
   // Use destructuring to avoid having to use props.plant.name, props.returnPlant(), etc
   let { plant, returnPlant, allocatePlant } = props;
   let { name, color, image, numAvailable } = plant;

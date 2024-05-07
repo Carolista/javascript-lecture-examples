@@ -19,14 +19,7 @@ const Main = () => {
     let data = await response.json();
 
     let plantData = data.map(obj => {
-      return {
-        id: obj.id,
-        name: obj.name,
-        color: obj.color,
-        image: obj.image,
-        numAvailable: obj.numAvailable,
-        numAllocated: 0,
-      };
+      return { ...obj, numAllocated: 0 };
     });
 
     alphabetize(plantData, 'name');
